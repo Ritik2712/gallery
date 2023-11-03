@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.span::selection {
+    background-color: aqua;
+}
+
+/* body {
+    background-color: black;
+    color: white;
+} */
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.switch {
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
+
+
+.MuiInputBase-input {
+    color: grey !important;
+}
+
+.input {
+    border: none;
+}
+
+.flexbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 10px;
+}
+
+.input:focus {
+    border: none !important;
+}
+
+.text {
+    border-top: 1px solid grey
+}
+
+.bg {
+    background-color: rgb(140, 65, 210);
+}
+
+.search-button {
+    border-radius: 5px;
+}
+
+.search-box {
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.card p {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .flexbox {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .flexbox {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .flexbox {
+        grid-template-columns: 1fr;
+    }
+}
